@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Text</title>
+    <style>
+        #textarea {
+            resize: none;
+            font-size: 15px;
+            font-family: "Consolas";
+            background: #303030;
+            color: #fff;
+            position: absolute;
+            border-color:#ccc;
+            outline: none;
+            tab-size: 3;
+        }
+        /* .dirs {
+            position: relative;
+            margin-left: 430px;
+            background: #404040;
+            width: 150px;
+            height: 510px;
+            text-align: center;
+        } */
+    </style>
+</head>
+<body>
+    
+    <textarea name="textarea" id="textarea" cols="69" rows="27" wrap="off" placeholder="Hello There ! Write Code.." value=""  onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}" ></textarea>
+
+
+    <!-- <textarea name="textarea" id="textarea" cols="50" rows="27" wrap="off" value="; Welcome" >; Welcome</textarea>
+    
+    <div class="dirs" id="dirs">
+        <h4 style="border: 2px solid #909090; color: #fff;">EXPLORER</h4>
+    </div> -->
+    
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="index.js"></script>
+</body>
+</html>
